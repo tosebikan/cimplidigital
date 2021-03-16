@@ -16,6 +16,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer";
 
+import heroImage1 from "../assets/images/heroImage1.jpg";
+
 const clients = [
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png ",
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463555/download_1_jtz8fk.png",
@@ -72,20 +74,26 @@ function HomeScreen() {
           <Slider>
             <Slide index={0} className="homeskide-slide">
               <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
-                Providing quality innovative building solutions
+                We provide Custom IT Solutions for your business
               </h1>
               <p className="homeslide-body">
-                We provide innovative building solutions tailored to clients
-                vision and goals across industrial, public buildings, commercial
-                and infrastructure projects as well as high end residential
-                projects.
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+                <br /> Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim.
               </p>
-              <Link to="/contact">
-                <button className="homeslide-button">Contact Us</button>
-              </Link>
+              <div className="home_btn_group">
+                <Link to="/contact">
+                  <button className="homeslide-button">Learn more</button>
+                </Link>
+                <Link to="/contact">
+                  <button className="homeslide-button">Get in touch</button>
+                </Link>
+              </div>
               <img
-                // src="https://res.cloudinary.com/codeinstd/image/upload/v1610463803/image_vjy04q.png"
-                src="https://res.cloudinary.com/codeinstd/image/upload/v1612782952/Hero_section_image_1_1_1_jcggoi.jpg"
+                src={heroImage1}
                 width="100%"
                 alt=""
                 className="homeslide-img"
@@ -119,12 +127,36 @@ function HomeScreen() {
       </div>
 
       <div className="home-info">
-        <div className="home-info-container">
-          <h1>
-            We deliver top notch and convenient construction solution designs
-          </h1>
-
-          <div className="home-info-group">
+        <h1>Welcome to CimpliDigital</h1>
+        <p className="home-info-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat
+          volutpat, aliquet venenatis eget habitasse feugiat. Porttitor
+          habitasse metus, sagittis diam pharetra, quam ullamcorper ultricies.
+          Turpis ipsum varius tincidunt praesent at enim sapien. Vel massa a
+          consequat bibendum neque, accumsan a dignissim suscipit. Neque sit
+          nisl eleifend mauris, sit. Mauris tristique interdum nibh quisque.
+          Erat consequat elementum augue urna consequat vel mauris porttitor
+          purus. Turpis tincidunt mattis nibh tortor rutrum odio nunc. Non massa
+          viverra ac, nisi, neque interdum.
+        </p>
+        <div className="home-info-section">
+          <div className="home-info-container">
+            <h2>Light, Fast & Powerful</h2>
+            <p className="home-info-container-body">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+              sem. Nulla consequat massa quis enim.
+            </p>
+            <p className="home-info-container-body">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+              sem. Nulla consequat massa quis enim.
+            </p>
+            {/*<div className="home-info-group">
             <img
               src="https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_7_aw0iaf.png"
               alt=""
@@ -163,14 +195,15 @@ function HomeScreen() {
               <p className="home-info-group-text-title">Timeline</p>
               <p>We put premium to timeline service delivery on projects</p>
             </div>
+          </div>*/}
           </div>
-        </div>
 
-        <div className="home-info-image">
-          <img
-            src="https://res.cloudinary.com/codeinstd/image/upload/v1612783024/feature_section_image_cvrlup.jpg"
-            alt=""
-          />
+          <div className="home-info-image">
+            <img
+              src="https://res.cloudinary.com/codeinstd/image/upload/v1612783024/feature_section_image_cvrlup.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
 

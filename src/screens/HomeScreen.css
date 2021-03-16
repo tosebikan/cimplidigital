@@ -1,5 +1,5 @@
 .homescreen {
-  padding-top: 90px;
+  padding-top: 60px;
   overflow: scroll;
 }
 
@@ -8,17 +8,17 @@
 }
 
 .homeskide-slide {
-  background-color: rgba(0, 0, 0, 1);
+  /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 .homeslide-title {
   position: absolute;
   left: 10%;
-  top: 2%;
-  font-weight: 900;
-  font-size: 64px;
-  line-height: 80px;
-  color: #fff;
+  top: 18%;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #091133;
   width: 605px;
   text-align: left;
   z-index: 1;
@@ -27,11 +27,11 @@
 .homeslide-title1 {
   position: absolute;
   left: 10%;
-  top: 2%;
-  font-weight: 900;
-  font-size: 64px;
-  line-height: 80px;
-  color: #fff;
+  top: 18%;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #091133;
   width: 605px;
   text-align: left;
   z-index: 1;
@@ -53,11 +53,11 @@
 .homeslide-body {
   position: absolute;
   left: 10%;
-  top: 50%;
+  top: 40%;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #fff;
+  color: #091133;
   width: 566px;
   text-align: left;
   z-index: 1;
@@ -85,16 +85,22 @@
   transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.homeslide-button {
+.home_btn_group {
+  display: flex;
+  flex-direction: row;
   position: absolute;
   left: 10%;
-  top: 70%;
-  padding: 21px 27px;
-  border-radius: 40px;
-  background-color: #d4a70c;
+  top: 62%;
+  z-index: 300;
+}
+
+.homeslide-button {
+  margin-right: 20px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  background-color: #111b47;
   transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
   color: #fff;
-  z-index: 300;
   border: none;
   font-size: 14px;
   font-weight: bold;
@@ -334,9 +340,9 @@
 /* home info section */
 
 .home-info {
-  padding: 70px 150px 100px;
+  padding: 40px 150px 100px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 .home-info-container {
@@ -344,10 +350,29 @@
   flex-direction: column;
   justify-content: space-between;
   width: 417px;
-  height: 654px;
+  /* height: 654px; */
 }
-.home-info-container h1 {
+.home-info-container h2 {
+  margin-bottom: 0;
   text-align: left;
+}
+
+.home-info-body {
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.home-info-container-body {
+  line-height: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.home-info-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .home-info-group {
@@ -381,8 +406,8 @@
 }
 
 .home-info-image img {
-  width: 596px;
-  height: 654px;
+  width: 520px;
+  height: 410px;
   object-fit: cover;
 }
 
