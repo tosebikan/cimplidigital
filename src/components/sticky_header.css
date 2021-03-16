@@ -1,0 +1,46 @@
+.sticky_container {
+  width: 100vw;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 0 20px;
+}
+
+.sticky_group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-right: 1px solid #e2e2e2;
+  margin-right: 20px;
+}
+
+.sticky_group p {
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.sticky-icon {
+  margin-right: 10px;
+}
+
+.sticky_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.sticky_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky_icons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+
+.sticky-icon-block {
+  border-right: 1px solid #e2e2e2;
+  margin-right: 20px;
+  /* background-color: red; */
+}

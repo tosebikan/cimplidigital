@@ -1,0 +1,92 @@
+.imageViewer_container {
+  /* position: absolute; */
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  z-index: 2000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImageViewer_card {
+  width: 70vw;
+  height: 70vh;
+  background-color: #000;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ImageViewer_image {
+  width: 50vw;
+  /* height: 50vh; */
+  overflow: hidden;
+}
+.ImageViewer_imagee {
+  /* border-radius: 20px; */
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 1000px) {
+  .ImageViewer_card {
+    width: 95vw;
+    height: 65vh;
+    background-color: #000;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ImageViewer_image {
+    width: 80vw;
+    /* height: 50vh; */
+    overflow: hidden;
+  }
+
+  .ImageViewer_imagee {
+    /* border-radius: 5px; */
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .mobile-back {
+    bottom: 30px;
+    left: 30%;
+  }
+
+  .mobile-next {
+    bottom: 30px;
+    right: 30%;
+  }
+}
+
+.ImageViewer_cancel {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.ImageViewer_cancel:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 0, 0, 0.5);
+  cursor: pointer;
+}

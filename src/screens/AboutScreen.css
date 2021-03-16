@@ -1,0 +1,240 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.about-hero {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://res.cloudinary.com/codeinstd/image/upload/v1610463633/image_4_q5dip6.png");
+  height: 50%;
+  width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero h1 {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 80px;
+  color: #fff;
+}
+
+.about-overview {
+  padding: 50px 150px;
+  /* margin-bottom: 100px; */
+}
+
+.about-overview h2 {
+  text-align: left;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.about-overview-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-overview-group p {
+  width: 610px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: justify;
+  padding-right: 70px;
+}
+.about-overview-group img {
+  width: 415px;
+  height: 415px;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .about-hero h1 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 80px;
+    color: #fff;
+  }
+
+  .about-hero {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://res.cloudinary.com/codeinstd/image/upload/v1610463633/image_4_q5dip6.png");
+    height: 30%;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-overview {
+    padding: 20px 20px;
+  }
+  .ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .about-overview h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .about-overview-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-overview-group p {
+    width: 90%;
+    /* padding-left: 60px; */
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+    padding-right: 0;
+  }
+  .about-overview-group img {
+    margin: 20px auto 0;
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+/* values section */
+
+.about-value {
+  padding: 50px 130px;
+  margin: 0 auto;
+}
+
+.about-value h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44.46px;
+}
+
+.values-body {
+  margin: 0 auto;
+  width: 784px;
+  height: 66px;
+  text-align: center;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 22.4px;
+  margin-bottom: 50px;
+}
+
+.about-values-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.value-card {
+  background-color: #fff;
+  margin: 30px 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  width: 308px;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.value-card:hover {
+  transform: translateY(-3px);
+}
+
+.value-card p {
+  width: 288px;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.value-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.value-title h4 {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+.about-icon {
+  padding-right: 10px;
+}
+
+@media (max-width: 1000px) {
+  .about-value {
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .values-body {
+    margin: 0 auto;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 22.4px;
+    margin-bottom: 50px;
+  }
+
+  .value-card {
+    background-color: #fff;
+    margin: 20px 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    width: 308px;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .value-title h4 {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .about-icon {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+
+  .value-card p {
+    width: 90%;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+}
