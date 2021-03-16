@@ -8,7 +8,10 @@ import {
   faAddressCard,
   faAddressBook,
   faToolbox,
-  faPalette
+  faPalette,
+  faPhone,
+  faEnvelope,
+  faMapMarkerAlt
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -43,16 +46,16 @@ function StickyHeader() {
       <div className="sticky_section">
         <div className="sticky_row">
           <div className="sticky_group">
-            <FontAwesomeIcon icon={faHome} className="sticky-icon" />
+            <FontAwesomeIcon icon={faPhone} className="sticky-icon" />
             <p to="/">054 135 6456</p>
           </div>
           <div className="sticky_group">
-            <FontAwesomeIcon icon={faHome} className="sticky-icon" />
-            <p to="/">054 135 6456</p>
+            <FontAwesomeIcon icon={faEnvelope} className="sticky-icon" />
+            <p to="/">info@cimplidigita.com</p>
           </div>
           <div className="sticky_group">
-            <FontAwesomeIcon icon={faHome} className="sticky-icon" />
-            <p to="/">054 135 6456</p>
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="sticky-icon" />
+            <p to="/">A37 Volta Estate, Off Spintex Rd. Accra</p>
           </div>
         </div>
 

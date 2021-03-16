@@ -74,11 +74,9 @@ function App() {
       <div className="App">
         <StickyHeader />
         <header className="header">
-          <div className="brand">
-            <Link to="/">
-              <img src={logo} alt="" className="brand-logo" />
-            </Link>
-          </div>
+          <Link to="/" className="brand">
+            CimpliDigital
+          </Link>
 
           {width > 1000 ? (
             <>
@@ -159,6 +157,8 @@ function App() {
               &#9776;
             </button>
           )}
+
+          <button className="estimate_btn">Free Estimate</button>
         </header>
 
         <aside className="sidebar">
