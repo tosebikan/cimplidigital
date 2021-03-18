@@ -17,6 +17,7 @@ import {
 import Footer from "../components/Footer";
 
 import heroImage1 from "../assets/images/heroImage1.jpg";
+import heroImage2 from "../assets/images/heroimage2.jpg";
 
 const clients = [
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png ",
@@ -25,6 +26,24 @@ const clients = [
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463556/1519903944144_1_hqdvsa.png",
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463553/4_636633902869064999_1_ont7xc.png",
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463575/image_1_o0w2db.png"
+];
+
+const solutions = [
+  {
+    title: "Digital Transformation",
+    image:
+      "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png"
+  },
+  {
+    title: "Enterprise Software",
+    image:
+      "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png"
+  },
+  {
+    title: "Cloud Technology",
+    image:
+      "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png"
+  }
 ];
 
 function HomeScreen() {
@@ -115,8 +134,7 @@ function HomeScreen() {
                 </button>
               </Link>
               <img
-                // src="https://res.cloudinary.com/codeinstd/image/upload/v1610463681/image_3_jgnn3d.png  "
-                src="https://res.cloudinary.com/codeinstd/image/upload/v1612782853/Hero_section_image_2_1_zweznp.jpg"
+                src={heroImage2}
                 width="100%"
                 alt=""
                 className="homeslide-img"
@@ -204,6 +222,27 @@ function HomeScreen() {
               alt=""
             />
           </div>
+        </div>
+      </div>
+
+      <div className="home-solutions">
+        <h1>Our Solutions</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique
+          fusce sodales tempor, augue facilisis enim, ipsum turpis. Turpis lorem
+          vitae venenatis, tempus, purus volutpat volutpat.
+        </p>
+        <div className="solutions-container">
+          {solutions.map((el, i) => (
+            <div key={i} className="solutions-group">
+              <img
+                src={el.image}
+                alt=""
+                style={{ width: 100, height: 100, paddingTop: 30 }}
+              />
+              <p>{el.title}</p>
+            </div>
+          ))}
         </div>
       </div>
 

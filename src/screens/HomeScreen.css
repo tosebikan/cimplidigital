@@ -455,6 +455,34 @@
   }
 }
 
+/* solutions section */
+
+.home-solutions {
+  padding: 0 150px;
+}
+
+.home-solutions p {
+  margin-bottom: 50px;
+}
+
+.solutions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.solutions-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25);
+}
+
 /* clients section */
 
 .clients-section {
