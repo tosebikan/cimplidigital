@@ -5,6 +5,7 @@ import logo from "./assets/images/logo.png";
 import HomeScreen from "./screens/HomeScreen";
 import AboutScreen from "./screens/AboutScreen";
 import StickyHeader from "./components/sticky_header";
+import Contact from "./screens/contact";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -144,7 +145,7 @@ function App() {
                   Real Estate Development
                 </Link>
                 <Link to="/contact" className="dropdown-link">
-                  Contacts
+                  Contact
                 </Link>
               </div>
             </>
@@ -234,6 +235,7 @@ function App() {
         <main className="main-div">
           <Route path="/" component={HomeScreen} exact={true} />
           <Route path="/about-us" component={AboutScreen} />
+          <Route path="/contact" component={Contact} />
         </main>
       </div>
     </Router>
