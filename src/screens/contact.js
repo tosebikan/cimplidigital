@@ -41,8 +41,7 @@ function Contact() {
   };
   return (
     <div className="contact-container">
-      <div style={{ paddingTop: 50 }}>
-        <h1>Contact</h1>
+      <div>
         <div className="contact-top">
           <div className="map-container">
             <MyMap
@@ -52,7 +51,6 @@ function Contact() {
             />
           </div>
           <div className="contact-form-container">
-            <p className="form-title">Leave us a message</p>
             <form
               className="contact-form"
               onSubmit={submitForm}
@@ -61,32 +59,51 @@ function Contact() {
             >
               <div className="contact-form-top-section">
                 <div className="contact-form-item">
-                  <label>Name</label>
-                  <input type="text" name="name" placeholder="name" required />
+                  <label>First Name</label>
+                  <input type="text" name="fname" required />
                 </div>
                 <div className="contact-form-item">
+                  <label>Last Name</label>
+                  <input type="text" name="lname" required />
+                </div>
+              </div>
+              <div className="contact-form-top-section">
+                <div className="contact-form-item">
                   <label>Email</label>
-                  <input
-                    type="email"
-                    name="name"
-                    placeholder="email"
-                    required
-                  />
+                  <input type="email" name="name" required />
+                </div>
+                <div className="contact-form-item">
+                  <label>Phone</label>
+                  <input type="email" name="name" required />
                 </div>
               </div>
 
               <div className="contact-message-item">
                 <label>Message</label>
-                <textarea name="message" placeholder="message" required />
+                <textarea name="message" required />
               </div>
 
               {status === "SUCCESS" ? (
                 <p>Thanks!</p>
               ) : (
-                <button className="feature-button">Send Message</button>
+                <div className="submit_button_container">
+                  <button className="submit_contact_button">Submit</button>
+                  <FontAwesomeIcon icon={faHeart} className="contact-icon" />
+                </div>
               )}
               {status === "ERROR" && <p>Ooops! There was an error.</p>}
             </form>
+
+            <div className="contact-info-group">
+              <div className="contact-info-item">
+                <FontAwesomeIcon
+                  icon={faLocationArrow}
+                  className="contact-icon"
+                />
+                <p>Address</p>
+              </div>
+              <p className="contact-info-bottom">18 Junction Spintex, Accra</p>
+            </div>
           </div>
         </div>
       </div>
