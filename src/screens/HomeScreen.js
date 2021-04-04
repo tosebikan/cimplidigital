@@ -119,22 +119,24 @@ function HomeScreen() {
               />
             </Slide>
             <Slide index={1} className="homeskide-slide">
-              <h1 className="homeslide-title">Building World Class Designs</h1>
-              <p className={animate ? "homeslide-body2" : "homeslide-body"}>
+              <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
+                Building World Class Designs
+              </h1>
+              {/*<p className={animate ? "homeslide-body2" : "homeslide-body"}>*/}
+              <p className="homeslide-body">
                 We create inspiring spaces in whatever nature of projects or
                 sector. We pride ourselves on providing tailored building
                 solutions to meet the individual needs of our clients with an
                 emphasis on quality, value and trust.
               </p>
               <Link to="/contact">
-                <button
+                {/*<button
                   className={animate ? "homeslide-button2" : "homeslide-button"}
-                >
-                  Contact Us
-                </button>
+                >*/}
+                <button className="homeslide-button2 ">Contact Us</button>
               </Link>
               <img
-                src={heroImage2}
+                src={heroImage1}
                 width="100%"
                 alt=""
                 className="homeslide-img"

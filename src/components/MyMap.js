@@ -20,7 +20,7 @@ L.Marker.prototype.options.icon = DefaultIcon;
 
 function MyMap({ center, position, text, body }) {
   return (
-    <Map center={center} zoom={14} className="leaflet-container">
+    <Map center={center} zoom={12} className="leaflet-container">
       <TileLayer
         attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

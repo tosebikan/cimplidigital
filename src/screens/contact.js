@@ -4,7 +4,8 @@ import {
   faLocationArrow,
   faPhone,
   faEnvelope,
-  faHeart
+  faHeart,
+  faArrowRight
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
@@ -88,7 +89,10 @@ function Contact() {
               ) : (
                 <div className="submit_button_container">
                   <button className="submit_contact_button">Submit</button>
-                  <FontAwesomeIcon icon={faHeart} className="contact-icon" />
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="contact-icon message-icon"
+                  />
                 </div>
               )}
               {status === "ERROR" && <p>Ooops! There was an error.</p>}
@@ -97,72 +101,69 @@ function Contact() {
             <div className="contact-info-group">
               <div className="contact-info-item">
                 <FontAwesomeIcon
-                  icon={faLocationArrow}
-                  className="contact-icon"
+                  icon={faEnvelope}
+                  className="contact-icon message-icon"
                 />
-                <p>Address</p>
+
+                <a href="mailto:customercare@richhomesgh.com">
+                  <p className="contact-info-bottom email">
+                    customercare@richhomesgh.com
+                  </p>{" "}
+                </a>
               </div>
-              <p className="contact-info-bottom">18 Junction Spintex, Accra</p>
+
+              <div className="contact-info-item">
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  className="contact-icon message-icon"
+                />
+                <a href="tel:+123456890">
+                  <button className="contact-call  ">054 1356 456</button>
+                </a>
+                <a href="tel:+123456890">
+                  <button className="contact-call ">054 1356 456</button>
+                </a>
+              </div>
+
+              <div className="contact-info-item">
+                <FontAwesomeIcon
+                  icon={faLocationArrow}
+                  className="contact-icon message-icon"
+                />
+                <p className="contact-info-bottom">
+                  18 Junction Spintex, Accra
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2>Contact info</h2>
-        <p>You can react us via the following mediums</p>
-      </div>
-      <div className="contact-info-section">
-        <div className="contact-info-group">
-          <div className="contact-info-item">
-            <FontAwesomeIcon icon={faLocationArrow} className="contact-icon" />
-            <p>Address</p>
-          </div>
-          <p className="contact-info-bottom">18 Junction Spintex, Accra</p>
-        </div>
-        <div className="contact-info-group">
-          <div className="contact-info-item">
-            <FontAwesomeIcon icon={faPhone} className="contact-icon" />
-            <p>Call Us</p>
-          </div>
-          <div className="contact-info-bottom">
-            <a href="tel:+123456890">
-              <button className="feature-button">054 1356 456</button>
-            </a>
-            <a href="tel:+123456890">
-              <button className="feature-button">054 1356 456</button>
-            </a>
-          </div>
-        </div>
-        <div className="contact-info-group">
-          <div className="contact-info-item">
-            <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
-            <p>Email us</p>
-          </div>
-          <a href="mailto:customercare@richhomesgh.com">
-            <p className="contact-info-bottom email">
-              customercare@richhomesgh.com
-            </p>{" "}
-          </a>
-        </div>
-        <div className="contact-info-group">
-          <div className="contact-info-item">
-            <FontAwesomeIcon icon={faHeart} className="contact-icon" />
-            <p>social links</p>
-          </div>
-          <div>
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className="social-contact-icon"
-            />
-            <FontAwesomeIcon
-              icon={faFacebook}
-              className="social-contact-icon"
-            />
-            <FontAwesomeIcon icon={faTwitter} className="social-contact-icon" />
-            <FontAwesomeIcon
-              icon={faWhatsapp}
-              className="social-contact-icon"
-            />
+
+            <div className="contact-info-section">
+              <div className="contact-info-icons">
+                <div className="social-contact-icon-container">
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="social-contact-icon"
+                  />
+                </div>
+                <div className="social-contact-icon-container">
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    className="social-contact-icon"
+                  />
+                </div>
+                <div className="social-contact-icon-container">
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    className="social-contact-icon"
+                  />
+                </div>
+                <div className="social-contact-icon-container">
+                  <FontAwesomeIcon
+                    icon={faWhatsapp}
+                    className="social-contact-icon"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

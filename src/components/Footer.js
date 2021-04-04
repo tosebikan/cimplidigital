@@ -37,10 +37,11 @@ function Footer() {
     <div>
       <hr className="home-hr" />
       <footer className="footer">
-        <img
+        {/*  <img
           src="https://res.cloudinary.com/codeinstd/image/upload/v1610463552/Logo_dtpcyl.png"
           alt=""
-        />
+        />*/}
+        <h2>CimpliDigital</h2>
         <div className="footer-links">
           <div className="footer-group">
             <div className="footer-contact-group">
