@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
-import logo from "./assets/images/logo.png";
+
 import HomeScreen from "./screens/HomeScreen";
 import AboutScreen from "./screens/AboutScreen";
 import StickyHeader from "./components/sticky_header";
@@ -9,7 +9,6 @@ import Contact from "./screens/contact";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faChevronDown,
   faHome,
   faBuilding,
   faAddressCard,
@@ -58,9 +57,9 @@ function App() {
     }
   };
 
-  const menu = () => {
-    setOpenMenu(!openMenu);
-  };
+  // const menu = () => {
+  //   setOpenMenu(!openMenu);
+  // };
 
   const sideMenu = () => {
     setShowMenu(!showMenu);

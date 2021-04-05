@@ -4,7 +4,7 @@ import {
   faLocationArrow,
   faPhone,
   faEnvelope,
-  faHeart,
+  // faHeart,
   faArrowRight
 } from "@fortawesome/free-solid-svg-icons";
 import {

@@ -17,7 +17,7 @@ import {
 import Footer from "../components/Footer";
 
 import heroImage1 from "../assets/images/heroImage1.jpg";
-import heroImage2 from "../assets/images/heroimage2.jpg";
+// import heroImage2 from "../assets/images/heroimage2.jpg";
 import Transformation from "../assets/images/transformation.png";
 
 const clients = [

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./AboutScreen.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   faHandsHelping,
   faStar,
@@ -12,42 +12,42 @@ import {
 import Footer from "../components/Footer";
 import heroImage1 from "../assets/images/heroImage1.jpg";
 
-const values = [
-  {
-    icon: faHandsHelping,
-    title: "Trust",
-    body: "Honesty, transparency & reliability"
-  },
-  {
-    icon: faStar,
-    title: "Value",
-    body:
-      "We deliver what we promise, on time and budget delivering value at every project is core to us."
-  },
-  {
-    icon: faThumbsUp,
-    title: "Quality",
-    body:
-      "Quality is at the core of our business and it runs through our entire business processes."
-  },
-  {
-    icon: faUserFriends,
-    title: "Collaboration",
-    body:
-      "Colleagues, partners, suppliers, clients - everyone has a contribution to make, creating a culture of shared success"
-  },
-  {
-    icon: faUserShield,
-    title: "Safety",
-    body:
-      "To prevent injury on occupational ill health to anyone, who could be affected by our company operations, we do not comprise safety. "
-  },
-  {
-    icon: faCertificate,
-    title: "Professionalism",
-    body: "We prime our business transactions on absolute professionalism"
-  }
-];
+// const values = [
+//   {
+//     icon: faHandsHelping,
+//     title: "Trust",
+//     body: "Honesty, transparency & reliability"
+//   },
+//   {
+//     icon: faStar,
+//     title: "Value",
+//     body:
+//       "We deliver what we promise, on time and budget delivering value at every project is core to us."
+//   },
+//   {
+//     icon: faThumbsUp,
+//     title: "Quality",
+//     body:
+//       "Quality is at the core of our business and it runs through our entire business processes."
+//   },
+//   {
+//     icon: faUserFriends,
+//     title: "Collaboration",
+//     body:
+//       "Colleagues, partners, suppliers, clients - everyone has a contribution to make, creating a culture of shared success"
+//   },
+//   {
+//     icon: faUserShield,
+//     title: "Safety",
+//     body:
+//       "To prevent injury on occupational ill health to anyone, who could be affected by our company operations, we do not comprise safety. "
+//   },
+//   {
+//     icon: faCertificate,
+//     title: "Professionalism",
+//     body: "We prime our business transactions on absolute professionalism"
+//   }
+// ];
 
 const services = [
   {

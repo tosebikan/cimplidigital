@@ -2,13 +2,6 @@ import React from "react";
 import "./sticky_header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faChevronDown,
-  faHome,
-  faBuilding,
-  faAddressCard,
-  faAddressBook,
-  faToolbox,
-  faPalette,
   faPhone,
   faEnvelope,
   faMapMarkerAlt
