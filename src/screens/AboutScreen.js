@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./AboutScreen.css";
 
-import {
-  faHandsHelping,
-  faStar,
-  faThumbsUp,
-  faUserFriends,
-  faUserShield,
-  faCertificate
-} from "@fortawesome/free-solid-svg-icons";
+// import {
+//   faHandsHelping,
+//   faStar,
+//   faThumbsUp,
+//   faUserFriends,
+//   faUserShield,
+//   faCertificate
+// } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer";
 import heroImage1 from "../assets/images/heroImage1.jpg";
 
