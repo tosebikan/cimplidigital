@@ -18,6 +18,7 @@ import Footer from "../components/Footer";
 
 import heroImage1 from "../assets/images/heroImage1.jpg";
 import heroImage2 from "../assets/images/heroimage2.jpg";
+import Transformation from "../assets/images/transformation.png";
 
 const clients = [
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png ",
@@ -31,18 +32,15 @@ const clients = [
 const solutions = [
   {
     title: "Digital Transformation",
-    image:
-      "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png"
+    image: Transformation
   },
   {
     title: "Enterprise Software",
-    image:
-      "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png"
+    image: Transformation
   },
   {
     title: "Cloud Technology",
-    image:
-      "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png"
+    image: Transformation
   }
 ];
 
@@ -250,7 +248,7 @@ function HomeScreen() {
               <img
                 src={el.image}
                 alt=""
-                style={{ width: 100, height: 100, paddingTop: 30 }}
+                style={{ width: 50, height: 50, paddingTop: 30 }}
               />
               <p>{el.title}</p>
             </div>

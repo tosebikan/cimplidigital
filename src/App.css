@@ -52,6 +52,12 @@ ul {
   border-radius: 20px;
   margin-right: 20px;
   font-size: 12px;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.estimate_btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 1000px) {
@@ -105,10 +111,12 @@ ul {
   font-size: 14px;
   padding: 1.5rem;
   color: #040428;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .dropdown-link:hover {
-  color: #d4a70c;
+  color: #040428;
+  transform: translateY(-1px);
 }
 
 .dropdown {
