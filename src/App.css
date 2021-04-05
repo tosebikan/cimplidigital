@@ -23,7 +23,8 @@ ul {
 .header {
   /* position: fixed; */
   z-index: 1000;
-  width: 100%;
+  /* width: 95%; */
+
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -49,7 +50,8 @@ ul {
   border: none;
   color: #fff;
   border-radius: 20px;
-  margin-right: 40px;
+  margin-right: 20px;
+  font-size: 12px;
 }
 
 @media (max-width: 1000px) {

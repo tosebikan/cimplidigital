@@ -1,5 +1,5 @@
 .homescreen {
-  padding-top: 60px;
+  /* padding-top: 60px; */
   overflow: scroll;
 }
 
@@ -204,7 +204,7 @@
 }
 
 .homeslide-img {
-  width: 1444px;
+  /* width: 1444px; */
   object-fit: cover;
   /* filter: brightness(0.5); */
 

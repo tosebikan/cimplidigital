@@ -10,6 +10,7 @@ import {
   faCertificate
 } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer";
+import heroImage1 from "../assets/images/heroImage1.jpg";
 
 const values = [
   {
@@ -48,6 +49,45 @@ const values = [
   }
 ];
 
+const services = [
+  {
+    image:
+      "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png",
+    title: "Digital Transformation",
+    body: "Lorem ipsum dolor sit amet"
+  },
+  {
+    image:
+      "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png",
+    title: "Digital Transformation",
+    body: "Lorem ipsum dolor sit amet"
+  },
+  {
+    image:
+      "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png",
+    title: "Digital Transformation",
+    body: "Lorem ipsum dolor sit amet"
+  },
+  {
+    image:
+      "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png",
+    title: "Digital Transformation",
+    body: "Lorem ipsum dolor sit amet"
+  },
+  {
+    image:
+      "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png",
+    title: "Digital Transformation",
+    body: "Lorem ipsum dolor sit amet"
+  },
+  {
+    image:
+      "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png",
+    title: "Digital Transformation",
+    body: "Lorem ipsum dolor sit amet"
+  }
+];
+
 function AboutScreen() {
   const [readFull, setReadFull] = useState(false);
 
@@ -57,54 +97,67 @@ function AboutScreen() {
   return (
     <div className="container">
       <div className="about-hero">
-        <h1>About Sirius</h1>
+        <h1>We are a dynamic , responsible & Growing company </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim.
+        </p>
+        <img src={heroImage1} alt="" className="about-hero-image" />
+      </div>
+
+      <div className="about_services">
+        <div className="about_services_left">
+          <h2>CimpliDigital</h2>
+          <h1>Tech at its best</h1>
+          <p>We provide the following services</p>
+        </div>
+
+        <div className="about_services_right">
+          {services.map(el => (
+            <div className="about_services_right_group">
+              <div className="about_logo_container">
+                <img src={el.image} alt="" />
+              </div>
+
+              <h2>{el.title}</h2>
+              <p>{el.body}</p>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="about-overview">
-        <h2>Overview</h2>
         <div
           className={
             !readFull ? "about-overview-group ellipsis" : "about-overview-group"
           }
         >
+          {" "}
+          <h2>The CimpliDigital Guarantee</h2>
           <p onClick={fullText}>
-            Sirius Construction Work is a bespoke building solutions provider
-            with valuable experience across industries setup in Nigeria. We are
-            focus on commerical build projects, residential build projects,
-            infrastructure projects, public private partnership build projects
-            and interior fit-out projects.. Through shared commitment,
-            dedication and hardwork, we are fast becoming the chosen building
-            partner for clients ing Nigeria. Here at Sirius Construction we
-            understand that every build is bespoke. Every build presents its own
-            challenges that require bespoke end-to-end solutions. We aim to
-            navigate our clients through the building process happily,
-            efficiently and effortlessly.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            placerat volutpat, aliquet venenatis eget habitasse feugiat.
+            Porttitor habitasse metus, sagittis diam pharetra, quam ullamcorper
+            ultricies. Turpis ipsum varius tincidunt praesent at enim sapien.
+            Vel massa a consequat bibendum neque, accumsan a dignissim suscipit.
+            Neque sit nisl eleifend mauris, sit. Mauris tristique interdum nibh
+            quisque. Erat consequat elementum augue urna consequat vel mauris
+            porttitor purus. Turpis tincidunt mattis nibh tortor rutrum odio
+            nunc. Non massa viverra ac, nisi, neque interdum.
             <br />
-            With over 17 years of experience, we bring with us a wealth of
-            experience and knowledge, a vast network of suppliers and most
-            importantly a very high level of craftmanship. We contract only the
-            best trades people and the best quality materials so that your build
-            stands the test of time.
           </p>
-          <img
-            src="https://res.cloudinary.com/codeinstd/image/upload/v1610464788/Mask_Group_odaoal.png"
-            alt=""
-          />
         </div>
+        <img
+          src="https://res.cloudinary.com/codeinstd/image/upload/v1610464788/Mask_Group_odaoal.png"
+          alt=""
+        />
       </div>
 
       <div className="about-value">
-        <h2>Our Value</h2>
-        <p className="values-body">
-          Our core values drives our passion and desire to serve. Quality trust
-          and value drives our planning and project management functions,
-          collaborations, safety and professionalism ensures we deliver best of
-          results always. Our six cores values are the centre piece if our
-          business and we strive to always satisfy our customer in best possible
-          ways.{" "}
-        </p>
-
-        <div className="about-values-container">
+        {/*<div className="about-values-container">
           {values.map(value => (
             <div className="value-card">
               <div className="value-title">
@@ -114,7 +167,7 @@ function AboutScreen() {
               <p>{value.body}</p>
             </div>
           ))}
-        </div>
+        </div>*/}
       </div>
       <Footer />
     </div>

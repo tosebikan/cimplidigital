@@ -88,7 +88,7 @@ function App() {
                 <Link to="/about-us" className="dropdown-link">
                   About Us
                 </Link>
-                <div className="dropdown">
+                {/*<div className="dropdown">
                   <button
                     className="dropdown-button"
                     onClick={menu}
@@ -140,10 +140,10 @@ function App() {
                       </Link>
                     </div>
                   )}
-                </div>
-                <Link to="/real-estate" className="dropdown-link">
+                </div>*/}
+                {/*<Link to="/real-estate" className="dropdown-link">
                   Real Estate Development
-                </Link>
+                </Link>*/}
                 <Link to="/contact" className="dropdown-link">
                   Contact
                 </Link>
@@ -159,7 +159,9 @@ function App() {
             </button>
           )}
 
-          <button className="estimate_btn">Free Estimate</button>
+          <Link className="estimate_btn" to="/contact">
+            Free Estimate
+          </Link>
         </header>
 
         <aside className="sidebar">

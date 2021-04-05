@@ -46,11 +46,11 @@ function Footer() {
           <div className="footer-group">
             <div className="footer-contact-group">
               <FontAwesomeIcon icon={faPhone} className="footer-icon" />
-              <p>+234 700 555 8888</p>
+              <p>+233 54 123 1232</p>
             </div>
             <div className="footer-contact-group">
               <FontAwesomeIcon icon={faPhone} className="footer-icon" />
-              <p>+234 1 229 5555 </p>
+              <p>+233 54 123 1232 </p>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ function Footer() {
             </div>
             <div className="footer-contact-group">
               <FontAwesomeIcon icon={faEnvelope} className="footer-icon" />
-              <a href="/">contact@siriusconstruction.com</a>
+              <a href="/">contact@cimplidigital.com</a>
             </div>
           </div>
 
