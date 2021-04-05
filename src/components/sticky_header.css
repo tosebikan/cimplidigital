@@ -4,6 +4,12 @@
   padding: 0 0 0 20px;
 }
 
+@media (max-width: 1000px) {
+  .sticky_container {
+    display: none;
+  }
+}
+
 .sticky_group {
   display: flex;
   flex-direction: row;

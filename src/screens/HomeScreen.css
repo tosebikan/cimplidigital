@@ -228,7 +228,7 @@
     font-weight: 900;
     font-size: 28px;
     line-height: 30px;
-    color: #fff;
+    color: #091133;
     width: 300px;
   }
   .homeslide-title1 {
@@ -238,7 +238,7 @@
     font-weight: 900;
     font-size: 28px;
     line-height: 30px;
-    color: #fff;
+    color: #091133;
     width: 300px;
   }
 
@@ -246,7 +246,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #fff;
+    color: #091133;
     width: 75%;
     text-align: left;
     z-index: 1;
@@ -280,11 +280,11 @@
     border: none;
     font-size: 14px;
     font-weight: bold;
-    animation: up;
+    /* animation: up;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1); */
   }
 
   .homeslide-button2 {
@@ -300,11 +300,11 @@
     border: none;
     font-size: 14px;
     font-weight: bold;
-    animation: up;
+    /* animation: up;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1); */
   }
 
   .homeslide-back {

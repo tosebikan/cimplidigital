@@ -81,6 +81,7 @@ ul {
     filter: blur(20px); */
   }
   .header-button {
+    display: none;
     border: none;
     outline: none;
     margin-right: 30px;
