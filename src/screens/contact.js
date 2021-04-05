@@ -104,12 +104,11 @@ function Contact() {
                   icon={faEnvelope}
                   className="contact-icon message-icon"
                 />
-
-                <a href="mailto:customercare@richhomesgh.com">
-                  <p className="contact-info-bottom email">
-                    customercare@richhomesgh.com
-                  </p>{" "}
-                </a>
+                {/*<a href="mailto:customercare@richhomesgh.com">*/}
+                <p className="contact-info-bottom ">
+                  customercare@cimplidigital.com
+                </p>{" "}
+                {/* </a>*/}
               </div>
 
               <div className="contact-info-item">
