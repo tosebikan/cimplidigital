@@ -10,11 +10,11 @@ import Contact from "./screens/contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
-  faBuilding,
+  // faBuilding,
   faAddressCard,
-  faAddressBook,
-  faToolbox,
-  faPalette
+  faAddressBook
+  // faToolbox,
+  // faPalette
 } from "@fortawesome/free-solid-svg-icons";
 
 import ScrollToTop from "./components/ScrollToTop";
@@ -61,9 +61,9 @@ function App() {
   //   setOpenMenu(!openMenu);
   // };
 
-  const sideMenu = () => {
-    setShowMenu(!showMenu);
-  };
+  // const sideMenu = () => {
+  //   setShowMenu(!showMenu);
+  // };
 
   // console.log("dropdown", dropdown.current);
   // console.log({ openMenu });
