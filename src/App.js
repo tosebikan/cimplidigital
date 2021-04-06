@@ -25,7 +25,7 @@ function App() {
   };
 
   const [openMenu, setOpenMenu] = useState(false);
-  const [showMenu, setShowMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
 
   const [width, setWidth] = useState(window.innerWidth);
 
