@@ -267,24 +267,34 @@
     top: 30%;
   }
 
-  .homeslide-button {
+  .home_btn_group {
+    display: flex;
+    flex-direction: row;
     position: absolute;
+
     left: 10%;
-    top: 70%;
+    top: 80%;
+    z-index: 300;
+  }
+
+  .homeslide-button {
+    /* position: absolute; */
+    left: 10%;
+    top: 90%;
     padding: 10px 20px;
     border-radius: 40px;
-    background-color: #d4a70c;
+    /* background-color: #d4a70c; */
     transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
     color: #fff;
     z-index: 300;
     border: none;
     font-size: 14px;
     font-weight: bold;
-    /* animation: up;
+    animation: up;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1); */
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
 
   .homeslide-button2 {
@@ -300,11 +310,11 @@
     border: none;
     font-size: 14px;
     font-weight: bold;
-    /* animation: up;
+    animation: up;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1); */
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
 
   .homeslide-back {
@@ -419,12 +429,30 @@
     justify-content: space-between;
   }
 
+  .home-info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .home-info-body {
+    line-height: 30px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+  }
+
   .home-info-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     height: 500px;
+  }
+
+  .home-info-container h2 {
+    margin-bottom: 0;
+    text-align: center;
   }
 
   .home-info-group img {
@@ -504,11 +532,31 @@
 }
 
 @media (max-width: 1000px) {
+  .solutions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .solutions-container h1 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .solutions-group {
+    margin-bottom: 20px;
+  }
+
+  .home-solutions {
+    padding: 0 20px;
+  }
   .clients-section {
     padding: 20px;
   }
 
   .clients-img-group {
+    /* display: flex;
+    flex-direction: column; */
     flex-wrap: wrap;
   }
 

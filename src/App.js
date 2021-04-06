@@ -179,6 +179,13 @@ function App() {
             </li>
 
             <li>
+              <FontAwesomeIcon icon={faAddressBook} className="sidebar-icon" />
+              <Link to="/contact" onClick={toggleMenu}>
+                Contact
+              </Link>
+            </li>
+
+            {/*<li>
               <FontAwesomeIcon icon={faToolbox} className="sidebar-icon" />
               <Link to="" onClick={sideMenu}>
                 Projects
@@ -224,12 +231,7 @@ function App() {
                 Real Estate
               </Link>
             </li>
-            <li>
-              <FontAwesomeIcon icon={faAddressBook} className="sidebar-icon" />
-              <Link to="/contact" onClick={toggleMenu}>
-                Contact
-              </Link>
-            </li>
+            */}
           </ul>
         </aside>
 

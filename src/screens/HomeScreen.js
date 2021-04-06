@@ -24,9 +24,7 @@ const clients = [
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png ",
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463555/download_1_jtz8fk.png",
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463553/Total_1_a4a9tf.png",
-  "https://res.cloudinary.com/codeinstd/image/upload/v1610463556/1519903944144_1_hqdvsa.png",
-  "https://res.cloudinary.com/codeinstd/image/upload/v1610463553/4_636633902869064999_1_ont7xc.png",
-  "https://res.cloudinary.com/codeinstd/image/upload/v1610463575/image_1_o0w2db.png"
+  "https://res.cloudinary.com/codeinstd/image/upload/v1610463556/1519903944144_1_hqdvsa.png"
 ];
 
 const solutions = [
