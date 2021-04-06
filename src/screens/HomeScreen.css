@@ -429,6 +429,13 @@
     justify-content: space-between;
   }
 
+  .home-info-container-body {
+    padding: 0 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
   .home-info-section {
     display: flex;
     flex-direction: column;
@@ -440,6 +447,7 @@
     line-height: 30px;
     margin-bottom: 50px;
     padding: 0 20px;
+    text-align: justify;
   }
 
   .home-info-container {

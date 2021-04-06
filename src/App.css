@@ -46,9 +46,10 @@ ul {
 
 .estimate_btn {
   padding: 8px 20px;
-  background-color: #111b47;
+  /* background-color: #111b47; */
+  font-weight: 600;
   border: none;
-  color: #fff;
+  color: #111b47;
   border-radius: 20px;
   margin-right: 20px;
   font-size: 12px;
@@ -57,6 +58,24 @@ ul {
 
 .estimate_btn:hover {
   transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.estimate_btn2 {
+  padding: 8px 20px;
+  /* background-color: #111b47; */
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  border-radius: 20px;
+  margin-right: 20px;
+  font-size: 12px;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.estimate_btn2:hover {
+  transform: translateY(-3px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -70,7 +89,7 @@ ul {
   .header {
     /* position: fixed; */
     z-index: 1000;
-    width: 95%;
+    width: 90%;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -231,7 +250,7 @@ ul {
 }
 
 .slide-menu {
-  padding-top: 5px;
+  /* padding-top: 5px; */
   padding-left: 40px;
 }
 
@@ -291,10 +310,11 @@ ul {
   margin: 2rem 0;
   color: white;
   text-align: left;
+  font-size: 18px;
 }
 
 .sidebar li:first-child {
-  margin-top: 12vh;
+  margin-top: 6vh;
 }
 
 .sidebar li:hover .sidebar-icon {
@@ -302,7 +322,8 @@ ul {
 }
 
 .sidebar-icon {
-  color: #d4a70c;
+  font-size: 21px;
+  color: #091133;
   transition: 1s cubic-bezier(0.8, 0.8, 0.2, 1);
 }
 

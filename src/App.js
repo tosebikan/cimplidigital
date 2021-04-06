@@ -233,6 +233,9 @@ function App() {
             </li>
             */}
           </ul>
+          <Link className="estimate_btn2" to="/contact">
+            Free Estimate
+          </Link>
         </aside>
 
         <main className="main-div">

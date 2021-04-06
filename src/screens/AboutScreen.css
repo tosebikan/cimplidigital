@@ -90,7 +90,7 @@
 .about_services_left h2 {
   width: 150px;
   text-align: center;
-  background-color: red;
+
   padding: 8px 20px;
   border-radius: 20px;
   background-color: #f5f6f8;
@@ -134,11 +134,60 @@
   .about-hero h1 {
     font-weight: 900;
     font-size: 32px;
-    line-height: 80px;
-    color: #fff;
+    line-height: 50px;
+    color: #37447e;
+    padding: 0 20px;
   }
 
-  .about-hero {
+  .about_services {
+    /* margin: 80px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .about_services_left {
+    margin: 0 auto;
+  }
+
+  .about_services_left h2 {
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    /* background-color: red; */
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: #f5f6f8;
+  }
+
+  .about_services_left h1 {
+    text-align: center;
+    color: #37447e;
+  }
+  .about_services_left p {
+    text-align: center;
+  }
+
+  .about_services_right {
+    padding-top: 30px;
+    display: flex;
+    flex-grow: row;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .about_services_right_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .about_services_right_group p {
+    margin-top: 0;
+  }
+  /* .about-hero {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("https://res.cloudinary.com/codeinstd/image/upload/v1610463633/image_4_q5dip6.png");
     height: 30%;
@@ -146,11 +195,11 @@
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
   .about-overview {
     padding: 20px 20px;
@@ -171,6 +220,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .about-overview-group h2 {
+    padding: 0 40px;
+    margin: 0 auto;
   }
   .about-overview-group p {
     width: 90%;
