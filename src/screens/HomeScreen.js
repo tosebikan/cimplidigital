@@ -66,30 +66,34 @@ function HomeScreen() {
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={width < 1000 ? 125 : 48}
-          totalSlides={2}
+          totalSlides={3}
           className="carousel"
+          isPlaying={true}
+          interval={5000}
+          dragEnabled={true}
+          infinite={true}
         >
-          {animate && (
+          {
             <ButtonBack className="homeslide-back" onClick={slideBack}>
               <FontAwesomeIcon
                 icon={faChevronLeft}
                 className="homeslide-icon"
               />
             </ButtonBack>
-          )}
-          {!animate && (
+          }
+          {
             <ButtonNext className="homeslide-next" onClick={slideFront}>
               <FontAwesomeIcon
                 icon={faChevronRight}
                 className="homeslide-icon"
               />
             </ButtonNext>
-          )}
+          }
 
           <Slider>
             <Slide index={0} className="homeskide-slide">
               <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
-                We provide Custom IT Solutions for your business
+                1
               </h1>
               <p className="homeslide-body">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -114,9 +118,36 @@ function HomeScreen() {
                 className="homeslide-img"
               />
             </Slide>
-            <Slide index={1} className="homeskide-slide">
+            <Slide index={0} className="homeskide-slide">
               <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
-                We provide Custom IT Solutions for your business
+                2
+              </h1>
+              <p className="homeslide-body">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+                <br /> Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat massa quis enim.
+              </p>
+              <div className="home_btn_group">
+                <Link to="/contact">
+                  <button className="homeslide-button">Learn more</button>
+                </Link>
+                <Link to="/contact">
+                  <button className="homeslide-button">Get in touch</button>
+                </Link>
+              </div>
+              <img
+                src={heroImage1}
+                width="100%"
+                alt=""
+                className="homeslide-img"
+              />
+            </Slide>
+            <Slide index={2} className="homeskide-slide">
+              <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
+                3
               </h1>
               {/*<p className={animate ? "homeslide-body2" : "homeslide-body"}>*/}
               <p className="homeslide-body">
