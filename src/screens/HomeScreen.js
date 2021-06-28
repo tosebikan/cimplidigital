@@ -24,15 +24,13 @@ import cimplidigital from "../assets/cimplidigital.mp4";
 import homeuser from "../assets/images/homeuser.png";
 import homeusers from "../assets/images/homeusers.png";
 import mic from "../assets/images/mic.png";
-import topwave from "../assets/images/topwave.png";
-import bottomwave from "../assets/images/bottomwave.png";
 
-const clients = [
-  "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png ",
-  "https://res.cloudinary.com/codeinstd/image/upload/v1610463555/download_1_jtz8fk.png",
-  "https://res.cloudinary.com/codeinstd/image/upload/v1610463553/Total_1_a4a9tf.png",
-  "https://res.cloudinary.com/codeinstd/image/upload/v1610463556/1519903944144_1_hqdvsa.png"
-];
+// const clients = [
+//   "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png ",
+//   "https://res.cloudinary.com/codeinstd/image/upload/v1610463555/download_1_jtz8fk.png",
+//   "https://res.cloudinary.com/codeinstd/image/upload/v1610463553/Total_1_a4a9tf.png",
+//   "https://res.cloudinary.com/codeinstd/image/upload/v1610463556/1519903944144_1_hqdvsa.png"
+// ];
 
 const solutions = [
   {
