@@ -96,14 +96,14 @@ function HomeScreen() {
               <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
                 Custom IT Solutions For Your Business
               </h1>
-              <p className="homeslide-body">
+              {/*<p className="homeslide-body">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa. Cum sociis natoque
                 penatibus et magnis dis parturient montes, nascetur ridiculus
                 mus.
                 <br /> Donec quam felis, ultricies nec, pellentesque eu, pretium
                 quis, sem. Nulla consequat massa quis enim.
-              </p>
+              </p>*/}
               <div className="home_btn_group">
                 <Link to="/contact">
                   <button className="homeslide-button">Learn more</button>
@@ -123,14 +123,14 @@ function HomeScreen() {
               <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
                 Microsoft Dynamics & Cloud Technologies
               </h1>
-              <p className="homeslide-body">
+              {/*<p className="homeslide-body">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa. Cum sociis natoque
                 penatibus et magnis dis parturient montes, nascetur ridiculus
                 mus.
                 <br /> Donec quam felis, ultricies nec, pellentesque eu, pretium
                 quis, sem. Nulla consequat massa quis enim.
-              </p>
+              </p>*/}
               <div className="home_btn_group">
                 <Link to="/contact">
                   <button className="homeslide-button">Learn more</button>
@@ -148,17 +148,17 @@ function HomeScreen() {
             </Slide>
             <Slide index={2} className="homeskide-slide">
               <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
-                Build Agile Business Processes
+                Build Agile Business Processes With Ease
               </h1>
               {/*<p className={animate ? "homeslide-body2" : "homeslide-body"}>*/}
-              <p className="homeslide-body">
+              {/*<p className="homeslide-body">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                 commodo ligula eget dolor. Aenean massa. Cum sociis natoque
                 penatibus et magnis dis parturient montes, nascetur ridiculus
                 mus.
                 <br /> Donec quam felis, ultricies nec, pellentesque eu, pretium
                 quis, sem. Nulla consequat massa quis enim.
-              </p>
+              </p>*/}
 
               <div className="home_btn_group">
                 <Link to="/contact">
@@ -185,9 +185,9 @@ function HomeScreen() {
             <h2>Technological Business Transformation</h2>
             <p className="home-info-container-body">
               CimpliDigital is an innovative IT solutions company offering
-              advanced technological developments which provides enterpises with
-              solutions that improve productivity increase profitability, reduce
-              complexities & cost.
+              advanced technological developments which provides enterprises
+              with solutions that improves productivity, increase profitability,
+              reduce complexities & cost.
             </p>
             <p className="home-info-container-body">
               We provide proven solutions using Microsoft products such as
