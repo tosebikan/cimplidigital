@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./HomeScreen.css";
 import { Link } from "react-router-dom";
 import {
@@ -20,6 +20,7 @@ import heroImage1 from "../assets/images/heroImage1.jpg";
 // import meet from "../assets/images/meet.jpg";
 import surface from "../assets/images/surface.jpg";
 import Transformation from "../assets/images/transformation.png";
+import cimplidigital from "../assets/cimplidigital.mp4";
 
 const clients = [
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png ",
@@ -46,6 +47,9 @@ const solutions = [
 function HomeScreen() {
   const [width, setWidth] = useState(window.innerWidth);
   const [animate, setAnimate] = useState(false);
+  const [playVideo, setPlayVideo] = useState(true);
+
+  const videoRef = useRef(null);
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -59,6 +63,17 @@ function HomeScreen() {
   const slideBack = () => {
     setAnimate(false);
     console.log("slideback", animate);
+  };
+
+  const handlePress = () => {
+    if (playVideo) {
+      videoRef.current.pause();
+      setPlayVideo(false);
+      return;
+    }
+
+    videoRef.current.play();
+    setPlayVideo(true);
   };
 
   return (
@@ -93,44 +108,56 @@ function HomeScreen() {
 
           <Slider>
             <Slide index={0} className="homeskide-slide">
-              <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
+              <h1
+                className={animate ? "homeslide-title" : "homeslide-title1"}
+                style={{ color: "#fff" }}
+              >
                 Custom IT Solutions For Your Business
               </h1>
-              {/*<p className="homeslide-body">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus.
-                <br /> Donec quam felis, ultricies nec, pellentesque eu, pretium
-                quis, sem. Nulla consequat massa quis enim.
-              </p>*/}
+
               <div className="home_btn_group">
                 <Link to="/contact">
-                  <button className="homeslide-button">Learn more</button>
+                  <button
+                    className="homeslide-button"
+                    style={{ backgroundColor: "#000" }}
+                  >
+                    Learn more
+                  </button>
                 </Link>
                 <Link to="/contact">
-                  <button className="homeslide-button">Get in touch</button>
+                  <button
+                    className="homeslide-button"
+                    style={{ backgroundColor: "#000" }}
+                  >
+                    Get in touch
+                  </button>
                 </Link>
               </div>
-              <img
+              {/*<img
                 src={heroImage1}
                 width="100%"
                 alt=""
                 className="homeslide-img"
-              />
+              />*/}
+
+              <video
+                width="100%"
+                height="100%"
+                autoPlay
+                loop
+                muted
+                ref={videoRef}
+                onClick={handlePress}
+                className="home_video"
+              >
+                <source src={cimplidigital} type="video/mp4" />
+              </video>
             </Slide>
             <Slide index={0} className="homeskide-slide">
               <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
                 Microsoft Dynamics & Cloud Technologies
               </h1>
-              {/*<p className="homeslide-body">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus.
-                <br /> Donec quam felis, ultricies nec, pellentesque eu, pretium
-                quis, sem. Nulla consequat massa quis enim.
-              </p>*/}
+
               <div className="home_btn_group">
                 <Link to="/contact">
                   <button className="homeslide-button">Learn more</button>
@@ -150,15 +177,6 @@ function HomeScreen() {
               <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
                 Build Agile Business Processes With Ease
               </h1>
-              {/*<p className={animate ? "homeslide-body2" : "homeslide-body"}>*/}
-              {/*<p className="homeslide-body">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus.
-                <br /> Donec quam felis, ultricies nec, pellentesque eu, pretium
-                quis, sem. Nulla consequat massa quis enim.
-              </p>*/}
 
               <div className="home_btn_group">
                 <Link to="/contact">
