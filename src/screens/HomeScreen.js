@@ -23,6 +23,9 @@ import Transformation from "../assets/images/transformation.png";
 import cimplidigital from "../assets/cimplidigital.mp4";
 import homeuser from "../assets/images/homeuser.png";
 import homeusers from "../assets/images/homeusers.png";
+import mic from "../assets/images/mic.png";
+import topwave from "../assets/images/topwave.png";
+import bottomwave from "../assets/images/bottomwave.png";
 
 const clients = [
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png ",
@@ -308,14 +311,35 @@ function HomeScreen() {
         </div>
       </div>
 
-      <div className="clients-section">
+      <div className="home_build">
+        <div className="home_build_left">
+          <h2>
+            Build solutions using Microsoft Cloud: Office 365, SharePoint, Power
+            Bi, Dynamics 365, Azure & more
+          </h2>
+          <p>Contact us for more info</p>
+          <button> Learn more</button>
+        </div>
+        <img
+          src={mic}
+          alt=""
+          style={{
+            width: 450,
+            height: 550,
+            borderRadius: 20,
+            marginRight: 30
+          }}
+        />
+      </div>
+
+      {/*<div className="clients-section">
         <h1>Our Clients</h1>
         <div className="clients-img-group">
           {clients.map((client, index) => (
             <img key={index} src={client} alt="" />
           ))}
         </div>
-      </div>
+      </div>*/}
       <Footer />
     </div>
   );

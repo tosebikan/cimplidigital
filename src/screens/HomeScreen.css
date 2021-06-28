@@ -532,7 +532,7 @@
   margin: 0 50px;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-  margin-bottom: 60px;
+  margin-bottom: 120px;
 }
 
 .home-solutions h1 {
@@ -584,6 +584,7 @@
   padding: 50px 0;
   margin: 50px;
   border-radius: 20px;
+  margin-bottom: 150px;
 }
 
 .home_users_left {
@@ -639,6 +640,48 @@
   line-height: 24px;
 }
 
+/* home build */
+.home_build {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px;
+  background-color: #e7ecff;
+  border-radius: 20px;
+  position: relative;
+}
+
+.home_build_left {
+  width: 60%;
+  padding: 50px;
+  text-align: left;
+}
+
+.home_build h2 {
+  /* margin-right: 10%; */
+  text-align: left;
+  color: #37447e;
+  font-size: 48px;
+  font-weight: 600;
+}
+.home_build p {
+  color: #111b47;
+  font-size: 36px;
+}
+
+.home_build button {
+  padding: 8px 20px;
+
+  border: none;
+  background-color: #111b47;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.home_build img {
+  position: absolute;
+  right: -100px;
+}
 /* clients section */
 
 .clients-section {
