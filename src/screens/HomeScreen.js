@@ -17,7 +17,8 @@ import {
 import Footer from "../components/Footer";
 
 import heroImage1 from "../assets/images/heroImage1.jpg";
-// import heroImage2 from "../assets/images/heroimage2.jpg";
+import meet from "../assets/images/meet.jpg";
+import surface from "../assets/images/surface.jpg";
 import Transformation from "../assets/images/transformation.png";
 
 const clients = [
@@ -93,7 +94,7 @@ function HomeScreen() {
           <Slider>
             <Slide index={0} className="homeskide-slide">
               <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
-                1
+                Custom IT Solutions For Your Business
               </h1>
               <p className="homeslide-body">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -120,7 +121,7 @@ function HomeScreen() {
             </Slide>
             <Slide index={0} className="homeskide-slide">
               <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
-                2
+                Microsoft Dynamics & Cloud Technologies
               </h1>
               <p className="homeslide-body">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -147,7 +148,7 @@ function HomeScreen() {
             </Slide>
             <Slide index={2} className="homeskide-slide">
               <h1 className={animate ? "homeslide-title" : "homeslide-title1"}>
-                3
+                Build Agile Business Processes
               </h1>
               {/*<p className={animate ? "homeslide-body2" : "homeslide-body"}>*/}
               <p className="homeslide-body">
@@ -158,12 +159,7 @@ function HomeScreen() {
                 <br /> Donec quam felis, ultricies nec, pellentesque eu, pretium
                 quis, sem. Nulla consequat massa quis enim.
               </p>
-              {/*<Link to="/contact">
-                <button
-                  className={animate ? "homeslide-button2" : "homeslide-button"}
-                >
-                <button className="homeslide-button2 ">Contact Us</button>
-              </Link>*/}
+
               <div className="home_btn_group">
                 <Link to="/contact">
                   <button className="homeslide-button">Learn more</button>
@@ -184,82 +180,30 @@ function HomeScreen() {
       </div>
 
       <div className="home-info">
-        <h1>Welcome to CimpliDigital</h1>
-        <p className="home-info-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat
-          volutpat, aliquet venenatis eget habitasse feugiat. Porttitor
-          habitasse metus, sagittis diam pharetra, quam ullamcorper ultricies.
-          Turpis ipsum varius tincidunt praesent at enim sapien. Vel massa a
-          consequat bibendum neque, accumsan a dignissim suscipit. Neque sit
-          nisl eleifend mauris, sit. Mauris tristique interdum nibh quisque.
-          Erat consequat elementum augue urna consequat vel mauris porttitor
-          purus. Turpis tincidunt mattis nibh tortor rutrum odio nunc. Non massa
-          viverra ac, nisi, neque interdum.
-        </p>
         <div className="home-info-section">
           <div className="home-info-container">
-            <h2>Light, Fast & Powerful</h2>
+            <h2>Technological Business Transformation</h2>
             <p className="home-info-container-body">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim.
+              CimpliDigital is an innovative IT solutions company offering
+              advanced technological developments which provides enterpises with
+              solutions that improve productivity increase profitability, reduce
+              complexities & cost.
             </p>
             <p className="home-info-container-body">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim.
+              We provide proven solutions using Microsoft products such as
+              Dynamics 365, Azure, SharePoint, Power Apps, Office 365 & other IT
+              Solutions beyond Microsoft Products to improve business systems
+              all across Africa.
             </p>
-            {/*<div className="home-info-group">
-            <img
-              src="https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_7_aw0iaf.png"
-              alt=""
-            />
-            <div className="home-info-group-text">
-              <p className="home-info-group-text-title">
-                100% guaranteed project completion
-              </p>
-              <p>
-                we build safe comfortable and luxury projects to completion with
-                focus on quality
-              </p>
-            </div>
+            <p className="home-info-container-body">
+              We provide a complete end-to-end project implementation from
+              design to technical support, even managed services
+            </p>
           </div>
-
-          <div className="home-info-group">
-            <img
-              src="https://res.cloudinary.com/codeinstd/image/upload/v1610463556/Group_2_ujdpys.png "
-              alt=""
-            />
-            <div className="home-info-group-text">
-              <p className="home-info-group-text-title">No hidden fees</p>
-              <p>
-                There are no hidden costs. We deliver on agreed budgets with
-                premium value
-              </p>
-            </div>
-          </div>
-
-          <div className="home-info-group">
-            <img
-              src="https://res.cloudinary.com/codeinstd/image/upload/v1610464422/Group_3_jktqws.png"
-              alt=""
-            />
-            <div className="home-info-group-text">
-              <p className="home-info-group-text-title">Timeline</p>
-              <p>We put premium to timeline service delivery on projects</p>
-            </div>
-          </div>*/}
-          </div>
+          <div className="home-info-image-background" />
 
           <div className="home-info-image">
-            <img
-              src="https://res.cloudinary.com/codeinstd/image/upload/v1612783024/feature_section_image_cvrlup.jpg"
-              alt=""
-            />
+            <img src={surface} alt="" />
           </div>
         </div>
       </div>
