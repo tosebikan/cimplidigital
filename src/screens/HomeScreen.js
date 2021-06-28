@@ -17,7 +17,7 @@ import {
 import Footer from "../components/Footer";
 
 import heroImage1 from "../assets/images/heroImage1.jpg";
-import meet from "../assets/images/meet.jpg";
+// import meet from "../assets/images/meet.jpg";
 import surface from "../assets/images/surface.jpg";
 import Transformation from "../assets/images/transformation.png";
 
