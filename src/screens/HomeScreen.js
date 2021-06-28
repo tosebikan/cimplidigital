@@ -21,6 +21,8 @@ import heroImage1 from "../assets/images/heroImage1.jpg";
 import surface from "../assets/images/surface.jpg";
 import Transformation from "../assets/images/transformation.png";
 import cimplidigital from "../assets/cimplidigital.mp4";
+import homeuser from "../assets/images/homeuser.png";
+import homeusers from "../assets/images/homeusers.png";
 
 const clients = [
   "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png ",
@@ -31,15 +33,23 @@ const clients = [
 
 const solutions = [
   {
-    title: "Digital Transformation",
+    title: "Modern Workplace",
     image: Transformation
   },
   {
-    title: "Enterprise Software",
+    title: "Business Applications",
     image: Transformation
   },
   {
-    title: "Cloud Technology",
+    title: "Custom Development Solutions",
+    image: Transformation
+  },
+  {
+    title: "Support & Managed Services",
+    image: Transformation
+  },
+  {
+    title: "Power Platform",
     image: Transformation
   }
 ];
@@ -227,12 +237,11 @@ function HomeScreen() {
       </div>
 
       <div className="home-solutions">
-        <h1>Our Solutions</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique
-          fusce sodales tempor, augue facilisis enim, ipsum turpis. Turpis lorem
-          vitae venenatis, tempus, purus volutpat volutpat.
-        </p>
+        <div>
+          <h1>Solutions.</h1>
+          <button>Learn more</button>
+        </div>
+
         <div className="solutions-container">
           {solutions.map((el, i) => (
             <div key={i} className="solutions-group">
@@ -244,6 +253,58 @@ function HomeScreen() {
               <p>{el.title}</p>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="home_users">
+        <div className="home_users_left">
+          <img
+            src={homeuser}
+            alt=""
+            style={{ width: 500, height: 500, objectFit: "contain" }}
+          />
+          <button> Learn more</button>
+        </div>
+
+        <div className="home_users_right">
+          <div className="home_user_group">
+            <h2>IT teams</h2>
+            <p>
+              Moving applications to the cloud, improving time-to-market whilst
+              reducing capital expenditures. providing continuity & transparency
+              of business processes
+            </p>
+          </div>
+          <div className="home_user_group_middle_container">
+            <div className="home_user_group_middle">
+              <img
+                src={homeusers}
+                alt=""
+                style={{
+                  width: 150,
+                  height: 120,
+                  borderRadius: 20,
+                  marginRight: 30
+                }}
+              />
+
+              <div>
+                <h2>Business Organizations</h2>
+                <p>
+                  The ability to manage large services, scale, vertically &
+                  horizontally, ensuring consistent performance across board.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="home_user_group" style={{ marginTop: 300 }}>
+            <h2>Startups</h2>
+            <p>
+              The Infrastructure grows with the company, helps in cost
+              optimization, performance, & is available to add functionalities
+              processes & features{" "}
+            </p>
+          </div>
         </div>
       </div>
 
