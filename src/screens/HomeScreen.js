@@ -24,6 +24,7 @@ import cimplidigital from "../assets/cimplidigital.mp4";
 import homeuser from "../assets/images/homeuser.png";
 import homeusers from "../assets/images/homeusers.png";
 import mic from "../assets/images/mic.png";
+import poster from "../assets/images/poster.jpg";
 
 // const clients = [
 //   "https://res.cloudinary.com/codeinstd/image/upload/v1610463557/Group_18_jk59ek.png ",
@@ -144,14 +145,9 @@ function HomeScreen() {
                   </button>
                 </Link>
               </div>
-              {/*<img
-                src={heroImage1}
-                width="100%"
-                alt=""
-                className="homeslide-img"
-              />*/}
 
               <video
+                poster={poster}
                 width="100%"
                 height="100%"
                 autoPlay

@@ -1,6 +1,6 @@
 .homescreen {
   /* padding-top: 60px; */
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .homescreen-carousel {
