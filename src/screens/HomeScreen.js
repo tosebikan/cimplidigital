@@ -129,20 +129,10 @@ function HomeScreen() {
 
               <div className="home_btn_group">
                 <Link to="/contact">
-                  <button
-                    className="homeslide-button"
-                    style={{ backgroundColor: "#000" }}
-                  >
-                    Learn more
-                  </button>
+                  <button className="homeslide-button">Learn more</button>
                 </Link>
                 <Link to="/contact">
-                  <button
-                    className="homeslide-button"
-                    style={{ backgroundColor: "#000" }}
-                  >
-                    Get in touch
-                  </button>
+                  <button className="homeslide-button">Get in touch</button>
                 </Link>
               </div>
 
@@ -255,11 +245,7 @@ function HomeScreen() {
 
       <div className="home_users">
         <div className="home_users_left">
-          <img
-            src={homeuser}
-            alt=""
-            style={{ width: 500, height: 500, objectFit: "contain" }}
-          />
+          <img src={homeuser} alt="" />
           <button> Learn more</button>
         </div>
 
@@ -294,7 +280,7 @@ function HomeScreen() {
               </div>
             </div>
           </div>
-          <div className="home_user_group" style={{ marginTop: 300 }}>
+          <div className="home_user_group">
             <h2>Startups</h2>
             <p>
               The Infrastructure grows with the company, helps in cost
@@ -314,16 +300,7 @@ function HomeScreen() {
           <p>Contact us for more info</p>
           <button> Learn more</button>
         </div>
-        <img
-          src={mic}
-          alt=""
-          style={{
-            width: 450,
-            height: 550,
-            borderRadius: 20,
-            marginRight: 30
-          }}
-        />
+        <img src={mic} alt="" />
       </div>
 
       {/*<div className="clients-section">
